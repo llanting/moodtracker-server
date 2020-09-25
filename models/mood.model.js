@@ -22,6 +22,10 @@ const MoodSchema = new Schema(
       type: String,
       enum: ['low', 'medium', 'high'],
       required: true
+    },
+    userId: {
+      type: Schema.Types.ObjectId,
+      ref: 'user'
     }
   },
   {
